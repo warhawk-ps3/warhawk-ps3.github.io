@@ -1,0 +1,65 @@
+:root {
+	--background-color: #222;
+	--text-color: #CCC;
+	--thead-color: #FFF;
+	--border-color: #CCC;
+	--odd-rows-color: #030;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	margin: 0;
+}
+
+h1, p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+li {
+	margin-bottom: 20px;
+}
+
+a:link {
+	color: #FFF;
+}
+
+a:visited {
+	color: #88F;
+}
+
+table {
+	border-spacing: 0;
+	font-family: "Courier New", monospace;
+	font-size: 13px;
+	white-space: pre;
+}
+
+thead {
+	color: var(--thead-color);
+}
+
+thead, tbody {
+	border-bottom: 3px solid;
+}
+
+th, td {
+	border: 1px solid var(--border-color);
+	padding: 5px;
+}
+
+th {
+	background: var(--background-color);
+	border-bottom: 3px solid;
+	position: sticky;
+	top: 0;
+}
+
+th:nth-of-type(-n+2), td:nth-of-type(-n+2) {
+	background: var(--background-color);
+}
+
+tbody tr:nth-of-type(odd) td {
+	background: var(--odd-rows-color);
+}
